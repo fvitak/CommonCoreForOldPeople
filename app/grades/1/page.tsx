@@ -67,9 +67,14 @@ export default function Grade1Page() {
               }`}
             >
               <div className="flex items-start justify-between gap-4">
-                <p className="text-charcoal/70 text-base">
-                  {section.description}
-                </p>
+                <div>
+                  <h2 className="text-xl font-bold text-charcoal mb-1">
+                    {section.title}
+                  </h2>
+                  <p className="text-charcoal/60 text-base">
+                    {section.description}
+                  </p>
+                </div>
                 {section.upNext ? (
                   <span className="shrink-0 mt-1 bg-gold text-charcoal text-xs font-semibold px-3 py-1 rounded-full">
                     Up next
