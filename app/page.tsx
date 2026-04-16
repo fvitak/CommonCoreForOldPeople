@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailCapture from "@/app/components/EmailCapture";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 2 — Hook */}
+      {/* Section 2 — Hook + Email Capture */}
       <section className="bg-sand flex flex-col items-center justify-center text-center px-6 py-7">
         <h1 className="text-4xl md:text-6xl font-bold text-charcoal max-w-4xl leading-tight mb-6">
           Confused why your kid&apos;s math homework looks nothing like math?
@@ -34,9 +35,14 @@ export default function Home() {
         <p className="text-xl md:text-2xl text-charcoal max-w-2xl mb-6">
           You&apos;re not wrong to be confused. But there&apos;s a reason it works — and it takes about 10 minutes to get it.
         </p>
-        <p className="text-base text-charcoal/70 italic max-w-xl">
+        <p className="text-base text-charcoal/70 italic max-w-xl mb-8">
           From a dad who rolled his eyes at Common Core for years — until his 7-year-old changed his mind at a science fair.
         </p>
+        <div className="w-full bg-charcoal rounded-2xl py-8 px-4 max-w-[480px]">
+          <h2 className="text-white text-xl font-bold mb-1">Want to know when new grades drop?</h2>
+          <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
+          <EmailCapture />
+        </div>
       </section>
 
       {/* Section 3 — The Conversion Story */}
@@ -81,19 +87,6 @@ export default function Home() {
               Anyone sitting at a kitchen table feeling like the dummy in the room. Gen X parents who learned math by memorization and now feel lost. Grandparents helping with homework. Anyone who ever thought Common Core was nonsense and is willing to give it ten minutes.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Section 5 — Email Capture */}
-      <section className="bg-charcoal py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold text-white mb-8">
-          Want to know when new grades drop?
-        </h2>
-        <div
-          id="email-capture-placeholder"
-          className="text-tan text-lg max-w-md mx-auto border border-tan/30 rounded-xl p-8"
-        >
-          Sign up below — [email form coming in TASK-03]
         </div>
       </section>
     </main>

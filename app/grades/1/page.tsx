@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailCapture from "@/app/components/EmailCapture";
 
 const sections = [
   {
@@ -90,14 +91,10 @@ export default function Grade1Page() {
         </div>
 
         <div className="mt-16 text-center">
-          <p className="text-lg text-charcoal/70 mb-6">
-            Want to know when Grade 1 lessons go live?
-          </p>
-          <div
-            id="email-capture-placeholder"
-            className="border border-tan rounded-xl p-8 text-charcoal/40 text-base"
-          >
-            [Email capture — see TASK-03]
+          <div className="bg-charcoal rounded-2xl py-8 px-4">
+            <h2 className="text-white text-xl font-bold mb-1">Want to know when Grade 1 lessons go live?</h2>
+            <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
+            <EmailCapture />
           </div>
         </div>
       </div>
