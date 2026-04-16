@@ -51,7 +51,7 @@ export default function Grade1Page() {
         </Link>
 
         <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4">
-          Grade 1 — First Grade Math
+          Choose your topic
         </h1>
         <p className="text-lg text-charcoal/70 mb-14">
           Here&apos;s everything we cover in Grade 1. We&apos;re building these out now — check
@@ -67,14 +67,9 @@ export default function Grade1Page() {
               }`}
             >
               <div className="flex items-start justify-between gap-4">
-                <div>
-                  <h2 className="text-xl font-bold text-charcoal mb-1">
-                    {section.title}
-                  </h2>
-                  <p className="text-charcoal/60 text-base">
-                    {section.description}
-                  </p>
-                </div>
+                <p className="text-charcoal/70 text-base">
+                  {section.description}
+                </p>
                 {section.upNext ? (
                   <span className="shrink-0 mt-1 bg-gold text-charcoal text-xs font-semibold px-3 py-1 rounded-full">
                     Up next
