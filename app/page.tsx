@@ -20,7 +20,7 @@ export default function Home() {
       </section>
 
       {/* Section 2 — Hook */}
-      <section className="bg-sand min-h-screen flex flex-col items-center justify-center text-center px-6 py-20">
+      <section className="bg-sand flex flex-col items-center justify-center text-center px-6 py-7">
         <h1 className="text-4xl md:text-6xl font-bold text-charcoal max-w-4xl leading-tight mb-6">
           Confused why your kid&apos;s math homework looks nothing like math?
         </h1>
