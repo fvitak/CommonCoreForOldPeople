@@ -13,7 +13,7 @@ export async function POST(req: NextRequest) {
   try {
     await resend.contacts.create({
       email,
-      audienceId: process.env.RESEND_AUDIENCE_ID!,
+      segments: [{ id: process.env.RESEND_SEGMENT_ID! }],
     });
 
     await resend.emails.send({
