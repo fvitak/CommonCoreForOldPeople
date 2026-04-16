@@ -1,46 +1,46 @@
-import Link from "next/link";
-import EmailCapture from "@/app/components/EmailCapture";
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import EmailCapture from '@/app/components/EmailCapture';
+import EmailCaptureModal from '@/app/components/EmailCaptureModal';
 
 const sections = [
   {
-    title: "Adding & Subtracting",
-    description:
-      "Understanding what it means to combine and take away — not just how to do it",
+    title: 'Adding & Subtracting',
+    description: 'Understanding what it means to combine and take away — not just how to do it',
     upNext: true,
   },
   {
-    title: "Place Value",
-    description:
-      "Why the position of a digit changes everything (ones, tens, hundreds)",
+    title: 'Place Value',
+    description: 'Why the position of a digit changes everything (ones, tens, hundreds)',
     upNext: false,
   },
   {
-    title: "Measuring Length",
-    description:
-      "Comparing and ordering objects — the foundation of all measurement",
+    title: 'Measuring Length',
+    description: 'Comparing and ordering objects — the foundation of all measurement',
     upNext: false,
   },
   {
-    title: "Telling Time",
-    description:
-      "Reading clocks to the hour and half-hour — and why we measure time the way we do",
+    title: 'Telling Time',
+    description: 'Reading clocks to the hour and half-hour — and why we measure time the way we do',
     upNext: false,
   },
   {
-    title: "Counting & Sorting Data",
-    description:
-      "Reading simple charts and graphs — making sense of information",
+    title: 'Counting & Sorting Data',
+    description: 'Reading simple charts and graphs — making sense of information',
     upNext: false,
   },
   {
-    title: "Shapes & Space",
-    description:
-      "2D and 3D shapes, halves and quarters — geometry starts here",
+    title: 'Shapes & Space',
+    description: '2D and 3D shapes, halves and quarters — geometry starts here',
     upNext: false,
   },
 ];
 
 export default function Grade1Page() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <main className="bg-offwhite min-h-screen py-16 px-6">
       <div className="max-w-2xl mx-auto">
@@ -61,10 +61,11 @@ export default function Grade1Page() {
 
         <div className="space-y-4">
           {sections.map((section) => (
-            <div
+            <button
               key={section.title}
-              className={`bg-white rounded-xl px-6 py-5 cursor-default select-none ${
-                section.upNext ? "border-l-4 border-bark" : ""
+              onClick={() => setModalOpen(true)}
+              className={`w-full bg-white rounded-xl px-6 py-5 text-left hover:bg-white/70 transition-colors ${
+                section.upNext ? 'border-l-4 border-bark' : ''
               }`}
             >
               <div className="flex items-start justify-between gap-4">
@@ -86,7 +87,7 @@ export default function Grade1Page() {
                   </span>
                 )}
               </div>
-            </div>
+            </button>
           ))}
         </div>
 
@@ -98,6 +99,8 @@ export default function Grade1Page() {
           </div>
         </div>
       </div>
+
+      {modalOpen && <EmailCaptureModal onClose={() => setModalOpen(false)} />}
     </main>
   );
 }

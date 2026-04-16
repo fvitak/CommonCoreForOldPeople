@@ -1,20 +1,26 @@
-import Link from "next/link";
-import EmailCapture from "@/app/components/EmailCapture";
+'use client';
+
+import { useState } from 'react';
+import Link from 'next/link';
+import EmailCapture from '@/app/components/EmailCapture';
+import EmailCaptureModal from '@/app/components/EmailCaptureModal';
 
 const grades = [
   {
     number: 1,
-    subtext: "Adding, subtracting, and understanding what numbers actually mean",
+    subtext: 'Adding, subtracting, and understanding what numbers actually mean',
     active: true,
   },
-  { number: 2, subtext: "Coming soon", active: false },
-  { number: 3, subtext: "Coming soon", active: false },
-  { number: 4, subtext: "Coming soon", active: false },
-  { number: 5, subtext: "Coming soon", active: false },
-  { number: 6, subtext: "Coming soon", active: false },
+  { number: 2, subtext: 'Coming soon', active: false },
+  { number: 3, subtext: 'Coming soon', active: false },
+  { number: 4, subtext: 'Coming soon', active: false },
+  { number: 5, subtext: 'Coming soon', active: false },
+  { number: 6, subtext: 'Coming soon', active: false },
 ];
 
 export default function GradesPage() {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <main className="bg-sand min-h-screen py-20 px-6">
       <div className="max-w-4xl mx-auto">
@@ -39,14 +45,15 @@ export default function GradesPage() {
                 </div>
               </Link>
             ) : (
-              <div
+              <button
                 key={grade.number}
-                className="relative bg-tan text-charcoal/60 font-bold text-xl px-6 py-10 rounded-xl opacity-60 cursor-default select-none"
+                onClick={() => setModalOpen(true)}
+                className="relative bg-tan text-charcoal/60 font-bold text-xl px-6 py-10 rounded-xl hover:bg-tan/70 transition-colors text-left w-full"
               >
                 <div>Grade {grade.number}</div>
                 <div className="text-sm font-normal mt-2">{grade.subtext}</div>
                 <span className="absolute top-3 right-3 text-base">🔒</span>
-              </div>
+              </button>
             )
           )}
         </div>
@@ -57,6 +64,8 @@ export default function GradesPage() {
           <EmailCapture />
         </div>
       </div>
+
+      {modalOpen && <EmailCaptureModal onClose={() => setModalOpen(false)} />}
     </main>
   );
 }

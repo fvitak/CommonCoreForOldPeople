@@ -1,5 +1,5 @@
-import Link from "next/link";
 import EmailCapture from "@/app/components/EmailCapture";
+import GradeGrid from "@/app/components/GradeGrid";
 
 export default function Home() {
   return (
@@ -7,24 +7,7 @@ export default function Home() {
       {/* Section 1 — Grade Preview */}
       <section className="bg-tan py-16 px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-12">Common Core, Common Sense, Grade by Grade</h2>
-        <div className="flex flex-nowrap justify-center gap-4 max-w-4xl mx-auto">
-          <Link
-            href="/grades/1"
-            className="bg-bark text-white font-bold text-lg px-6 py-8 rounded-xl flex-1 hover:bg-bark/85 transition-colors"
-          >
-            <div>Grade 1</div>
-            <div className="text-sm font-normal mt-2 text-white/80">Coming soon</div>
-          </Link>
-          {["Grade 2", "Grade 3", "Grade 4", "Grade 5"].map((grade) => (
-            <div
-              key={grade}
-              className="bg-bark/40 border-2 border-bark/30 text-charcoal/60 font-bold text-lg px-6 py-8 rounded-xl flex-1 cursor-not-allowed select-none"
-            >
-              <div>{grade}</div>
-              <div className="text-sm font-normal mt-2 text-charcoal/40">Coming soon</div>
-            </div>
-          ))}
-        </div>
+        <GradeGrid />
       </section>
 
       {/* Section 2 — Hook + Email Capture */}
