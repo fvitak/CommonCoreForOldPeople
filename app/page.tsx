@@ -3,7 +3,23 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      {/* Section 1 — Hook */}
+      {/* Section 1 — Grade Preview */}
+      <section className="bg-tan py-16 px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-12">Common Core, Common Sense, Grade by Grade</h2>
+        <div className="flex flex-nowrap justify-center gap-4 max-w-4xl mx-auto">
+          {["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5"].map((grade) => (
+            <div
+              key={grade}
+              className="bg-bark/40 border-2 border-bark/30 text-charcoal/60 font-bold text-lg px-6 py-8 rounded-xl flex-1 cursor-not-allowed select-none"
+            >
+              <div>{grade}</div>
+              <div className="text-sm font-normal mt-2 text-charcoal/40">Coming soon</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 2 — Hook */}
       <section className="bg-sand min-h-screen flex flex-col items-center justify-center text-center px-6 py-20">
         <h1 className="text-4xl md:text-6xl font-bold text-charcoal max-w-4xl leading-tight mb-6">
           Confused why your kid&apos;s math homework looks nothing like math?
@@ -14,22 +30,6 @@ export default function Home() {
         <p className="text-base text-charcoal/70 italic max-w-xl">
           From a dad who rolled his eyes at Common Core for years — until his 7-year-old changed his mind at a science fair.
         </p>
-      </section>
-
-      {/* Section 2 — Grade Preview */}
-      <section className="bg-tan py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold text-charcoal mb-12">Common Core, Common Sense, Grade by Grade</h2>
-        <div className="flex flex-nowrap justify-center gap-4 max-w-4xl mx-auto">
-          {["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5"].map((grade) => (
-            <div
-              key={grade}
-              className="bg-tan/60 text-charcoal/40 font-bold text-lg px-6 py-6 rounded-xl flex-1 cursor-not-allowed"
-            >
-              <div>{grade}</div>
-              <div className="text-sm font-normal mt-1">Coming soon</div>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* Section 3 — The Conversion Story */}
