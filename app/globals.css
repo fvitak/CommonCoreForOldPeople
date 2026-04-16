@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-sand: #F5E6C8;
+  --color-tan: #D4C5A9;
+  --color-gold: #D4A96A;
+  --color-sage: #8AAD7F;
+  --color-bark: #C17F5E;
+  --color-charcoal: #2C2C2C;
+  --color-offwhite: #FAFAF7;
+}
+
+body {
+  background: var(--color-sand);
+  color: var(--color-charcoal);
+  font-family: Georgia, 'Times New Roman', serif;
+}
