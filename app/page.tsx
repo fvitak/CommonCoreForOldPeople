@@ -16,8 +16,24 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Section 2 — The Conversion Story */}
-      <section className="bg-tan/30 py-20 px-6">
+      {/* Section 2 — Grade Preview */}
+      <section className="bg-tan py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold text-charcoal mb-12">Common Core, Common Sense, Grade by Grade</h2>
+        <div className="flex flex-nowrap justify-center gap-4 max-w-4xl mx-auto">
+          {["Grade 1", "Grade 2", "Grade 3", "Grade 4", "Grade 5"].map((grade) => (
+            <div
+              key={grade}
+              className="bg-tan/60 text-charcoal/40 font-bold text-lg px-6 py-6 rounded-xl flex-1 cursor-not-allowed"
+            >
+              <div>{grade}</div>
+              <div className="text-sm font-normal mt-1">Coming soon</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Section 3 — The Conversion Story */}
+      <section className="bg-offwhite py-20 px-6">
         <div className="max-w-2xl mx-auto space-y-6 text-charcoal text-lg leading-relaxed">
           <p>
             I was always decent at math. Not because I memorized everything — honestly, multiplication tables were a struggle. What I did instead was figure out tricks. There&apos;s this thing with nines: put down the finger you&apos;re multiplying by, count the fingers on each side, and you&apos;ve got your answer. I broke big problems into smaller ones I could add up. I didn&apos;t know that was a technique. I didn&apos;t know it had a name. It was just how my brain worked.
@@ -43,7 +59,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3 — What This Is */}
+      {/* Section 4 — What This Is */}
       <section className="bg-sage py-20 px-6">
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
@@ -58,29 +74,6 @@ export default function Home() {
               Anyone sitting at a kitchen table feeling like the dummy in the room. Gen X parents who learned math by memorization and now feel lost. Grandparents helping with homework. Anyone who ever thought Common Core was nonsense and is willing to give it ten minutes.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* Section 4 — Grade Preview */}
-      <section className="bg-sand py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold text-charcoal mb-3">Grade by grade. Starting now.</h2>
-        <p className="text-charcoal/70 text-lg mb-12">Grade 1 is live. More coming fast.</p>
-        <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
-          <Link
-            href="/grades"
-            className="bg-bark text-white font-bold text-lg px-8 py-6 rounded-xl hover:opacity-90 transition-opacity min-w-[140px]"
-          >
-            Grade 1
-          </Link>
-          {["Grade 2", "Grade 3", "Grade 4", "Grade 5"].map((grade) => (
-            <div
-              key={grade}
-              className="bg-tan/50 text-charcoal/40 font-bold text-lg px-8 py-6 rounded-xl min-w-[140px] cursor-not-allowed"
-            >
-              <div>{grade}</div>
-              <div className="text-sm font-normal mt-1">Coming soon</div>
-            </div>
-          ))}
         </div>
       </section>
 
