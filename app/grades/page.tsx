@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailCapture from "@/app/components/EmailCapture";
 
 const grades = [
   {
@@ -48,6 +49,12 @@ export default function GradesPage() {
               </div>
             )
           )}
+        </div>
+
+        <div className="mt-16 bg-charcoal rounded-2xl py-8 px-4 text-center">
+          <h2 className="text-white text-xl font-bold mb-1">Want to know when new grades drop?</h2>
+          <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
+          <EmailCapture />
         </div>
       </div>
     </main>
