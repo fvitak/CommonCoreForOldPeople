@@ -18,7 +18,7 @@ const sections = [
   },
   {
     title: 'Measuring Length',
-    description: 'Comparing and ordering objects. It's where all measurement starts.',
+    description: "Comparing and ordering objects. It's where all measurement starts.",
     upNext: false,
   },
   {
