@@ -7,33 +7,33 @@ import EmailCaptureModal from '@/app/components/EmailCaptureModal';
 
 const sections = [
   {
-    title: 'Adding & Subtracting',
-    description: 'Understanding what it means to combine and take away — not just how to do it',
+    title: 'Adding and Subtracting',
+    description: 'Not just how to do it. What it actually means to put things together or take them away.',
     upNext: true,
   },
   {
     title: 'Place Value',
-    description: 'Why the position of a digit changes everything (ones, tens, hundreds)',
+    description: 'Why where a digit sits changes everything. Ones, tens, hundreds.',
     upNext: false,
   },
   {
     title: 'Measuring Length',
-    description: 'Comparing and ordering objects — the foundation of all measurement',
+    description: 'Comparing and ordering objects. It's where all measurement starts.',
     upNext: false,
   },
   {
     title: 'Telling Time',
-    description: 'Reading clocks to the hour and half-hour — and why we measure time the way we do',
+    description: 'Reading clocks to the hour and half hour. And why we even measure time this way.',
     upNext: false,
   },
   {
-    title: 'Counting & Sorting Data',
-    description: 'Reading simple charts and graphs — making sense of information',
+    title: 'Counting and Sorting Data',
+    description: 'Reading simple charts and graphs. What are the numbers actually telling you.',
     upNext: false,
   },
   {
-    title: 'Shapes & Space',
-    description: '2D and 3D shapes, halves and quarters — geometry starts here',
+    title: 'Shapes and Space',
+    description: '2D and 3D shapes, halves and quarters. This is where geometry starts.',
     upNext: false,
   },
 ];
@@ -52,11 +52,10 @@ export default function Grade1Page() {
         </Link>
 
         <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4">
-          Choose your topic
+          Grade 1. First Grade Math.
         </h1>
         <p className="text-lg text-charcoal/70 mb-14">
-          Here&apos;s everything we cover in Grade 1. We&apos;re building these out now — check
-          back soon, or sign up below to get notified.
+          Here&apos;s everything we&apos;re covering in Grade 1. We&apos;re building these out now. Sign up below and we&apos;ll let you know when something&apos;s ready.
         </p>
 
         <div className="space-y-4">

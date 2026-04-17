@@ -25,7 +25,7 @@ export default function GradesPage() {
     <main className="bg-sand min-h-screen py-20 px-6">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-charcoal mb-4 text-center">
-          Choose your grade
+          Pick your grade
         </h1>
         <p className="text-xl text-charcoal/70 text-center mb-14">
           Start where your kid is. We&apos;ll show you the why behind what they&apos;re learning.

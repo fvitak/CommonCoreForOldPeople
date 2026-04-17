@@ -16,8 +16,9 @@ export default function Home() {
             className="font-bold text-charcoal"
             style={{ fontSize: 'clamp(1.5rem, 3.6vh, 3rem)', marginBottom: 'clamp(1rem, 2.3vh, 3rem)' }}
           >
-            Common Core, Common Sense, Grade by Grade
+            Grade by grade. Starting now.
           </h2>
+          <p className="text-charcoal/70 mb-4 text-base">Grade 1 is live. More coming fast.</p>
           <GradeGrid />
         </section>
 
@@ -35,46 +36,43 @@ export default function Home() {
             className="text-charcoal max-w-2xl"
             style={{ fontSize: 'clamp(1rem, 2vh, 1.5rem)', marginBottom: 'clamp(0.5rem, 1.2vh, 1.5rem)' }}
           >
-            You&apos;re not wrong to be confused. But there&apos;s a reason it works — and it takes about 10 minutes to get it.
+            You&apos;re not wrong. There&apos;s actually a reason it works. It takes about 10 minutes to get it and honestly you&apos;ll be glad you did.
           </p>
           <p
             className="text-charcoal/70 italic max-w-xl"
             style={{ fontSize: 'clamp(0.875rem, 1.5vh, 1rem)', marginBottom: 'clamp(0.5rem, 1.5vh, 2rem)' }}
           >
-            From a dad who rolled his eyes at Common Core for years — until his 7-year-old changed his mind at a science fair.
+            From a dad who thought it was total nonsense. Until his 7-year-old schooled him at a science fair.
           </p>
           <div className="w-full bg-charcoal rounded-2xl py-6 px-4 max-w-[480px]">
             <h2 className="text-white text-xl font-bold mb-1">Want to know when new grades drop?</h2>
-            <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
+            <p className="text-white/70 text-sm mb-2">No spam. Just a heads up when something&apos;s ready.</p>
             <EmailCapture />
           </div>
         </section>
 
       </div>
 
-      {/* Section 3 — The Conversion Story */}
+      {/* Section 3 — The Story */}
       <section className="bg-offwhite py-20 px-6">
         <div className="max-w-2xl mx-auto space-y-6 text-charcoal text-lg leading-relaxed">
           <p>
-            I was always decent at math. Not because I memorized everything — honestly, multiplication tables were a struggle. What I did instead was figure out tricks. There&apos;s this thing with nines: put down the finger you&apos;re multiplying by, count the fingers on each side, and you&apos;ve got your answer. I broke big problems into smaller ones I could add up. I didn&apos;t know that was a technique. I didn&apos;t know it had a name. It was just how my brain worked.
+            I was always good at math. Not because I memorized everything. Honestly, multiplication tables were kind of a mess for me. I learned tricks instead. The nine-finger trick where you put down the finger you&apos;re multiplying by and count the fingers on each side. Breaking big problems into smaller ones I could add up. I just figured that&apos;s how everybody did it. Turns out that was a thing.
           </p>
           <p>
-            Then Common Core showed up and everybody lost their minds. Me included. I glanced at some of the homework — just glanced, no context — and thought: what the hell is that? Why would you take simple math and make it look like that? I was fully on board with the backlash. That was a reasonable position, I thought.
+            Then Common Core came along and everyone lost their minds. I was right there with them. I looked at some of the homework solutions, didn&apos;t read anything, no context, just glanced at them and thought what the hell is that. Why would you make simple math more complicated. I was fully bought in to the backlash.
           </p>
           <p>
-            My wife has a master&apos;s in childhood education. She specializes in special needs kids. Early on, she got into it with a friend over Common Core — defending it, actually. I was listening, because she was making sense. We&apos;re behind the rest of the world in math. Not a little — a lot. And the way we&apos;ve been teaching it was never really about understanding. It was about passing a test. The fastest way to get the right answer has always been a calculator. So if that&apos;s all we&apos;re doing — teaching kids to arrive at an answer — what exactly did we learn?
+            My wife has a master&apos;s in childhood education. She specializes in special needs. Early on she got into it with a friend of mine over this stuff. She was defending Common Core and I actually listened because she was making sense. We&apos;re behind the rest of the world in math. The old way was never really about understanding. It was about passing a test. The easiest way to get the right answer has always been a calculator. So if that&apos;s the goal, what exactly did we learn?
           </p>
           <p>
-            That started to land for me. Math, while you&apos;re learning it, is not about the answer. My nine-finger trick works. But it works not because of fingers. Nine times six is fifty-four because if you have six groups of nine things, you have fifty-four things. That&apos;s real. The trick is just a shortcut to something that was already true before I invented my little workaround.
+            Here&apos;s the thing. Math, while you&apos;re learning it, is not about the answer. The nine-finger trick works. But not because of fingers. Nine times six is fifty-four because if you have six groups of nine things, you have fifty-four things. That&apos;s real. The trick is just a shortcut to something that was already true. I was doing Common Core math my whole life. I just didn&apos;t know it had a name.
           </p>
           <p>
-            My son is in first grade. Late birthday, so one of the youngest in his class. We were at a STEAM fair — the math station, easy, medium, hard problems. We picked medium. The teacher put up 60 minus 32. I double-took. That felt like a big jump for a first grader. The teacher started to pull it back. I said let him try.
+            My son. First grade, late birthday, one of the youngest in his class. We&apos;re at a STEAM fair math station. Easy, medium, hard. He fires off the easy one like it was a waste of his time. We go medium. The teacher throws out 60 minus 32. I double take. That&apos;s a hell of a jump. The teacher starts to back off and I say nah, let him try. He takes a few seconds and then works through it in groups of ten. Six groups of ten, take away three, you&apos;ve got thirty, minus two is twenty-eight. Done. I had to actually think about that myself.
           </p>
           <p>
-            He took a few seconds. Then he worked through it out loud, in groups of ten: six groups of ten, take away three groups, you&apos;ve got thirty. Thirty minus two is twenty-eight. Done. I had to actually think about it myself to confirm he was right.
-          </p>
-          <p>
-            How many of us would&apos;ve needed a second to do 60 minus 32 on paper? Borrowing works — but why does it work? That &ldquo;why&rdquo; isn&apos;t in the curriculum. It&apos;s not on the test, so nobody teaches it. This site is that ten-minute conversation. The one that turns &ldquo;what is this nonsense&rdquo; into &ldquo;oh — that&apos;s actually kind of brilliant.&rdquo;
+            How many of us would have needed a second to work through 60 minus 32 on paper? Borrowing works. But why does it work? That why is not in the curriculum. It&apos;s not on the test so teachers don&apos;t have time to teach it, if they even know it themselves. This site is that ten minute conversation. The one that turns &ldquo;what the hell is this&rdquo; into &ldquo;oh that&apos;s actually kind of brilliant.&rdquo;
           </p>
         </div>
       </section>
@@ -85,13 +83,13 @@ export default function Home() {
           <div>
             <h2 className="text-2xl font-bold text-charcoal mb-4">What we&apos;re building</h2>
             <p className="text-charcoal text-lg leading-relaxed">
-              Grade-by-grade guides for parents — starting with 1st grade and working up. Each one shows you the old way you remember, the Common Core way your kid is learning, and most importantly, <em>why</em> they&apos;re actually the same thing.
+              Grade by grade guides for parents. Starting with 1st grade and working up. Each one shows you the way you remember learning it, the way your kid is learning it now, and the part nobody ever explains: why they&apos;re actually the same thing.
             </p>
           </div>
           <div>
             <h2 className="text-2xl font-bold text-charcoal mb-4">Who it&apos;s for</h2>
             <p className="text-charcoal text-lg leading-relaxed">
-              Anyone sitting at a kitchen table feeling like the dummy in the room. Gen X parents who learned math by memorization and now feel lost. Grandparents helping with homework. Anyone who ever thought Common Core was nonsense and is willing to give it ten minutes.
+              Anyone sitting at a kitchen table feeling like the dummy in the room. Gen X parents who learned math by memorization and now feel completely lost. Grandparents helping with homework. Anyone who ever looked at their kid&apos;s worksheet and thought &ldquo;this is insane&rdquo; and is willing to give it ten minutes.
             </p>
           </div>
         </div>
