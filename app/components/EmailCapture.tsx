@@ -38,7 +38,7 @@ export default function EmailCapture() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-[420px] mx-auto px-4 py-8">
+    <form onSubmit={handleSubmit} className="max-w-[420px] mx-auto px-4 pt-3">
       <input
         type="email"
         required

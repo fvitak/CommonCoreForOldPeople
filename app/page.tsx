@@ -4,29 +4,53 @@ import GradeGrid from "@/app/components/GradeGrid";
 export default function Home() {
   return (
     <main>
-      {/* Section 1 — Grade Preview */}
-      <section className="bg-tan py-16 px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-12">Common Core, Common Sense, Grade by Grade</h2>
-        <GradeGrid />
-      </section>
+      {/* Sections 1+2 fill the viewport so the email capture is always above the fold */}
+      <div className="min-h-screen flex flex-col">
 
-      {/* Section 2 — Hook + Email Capture */}
-      <section className="bg-sand flex flex-col items-center justify-center text-center px-6 py-7">
-        <h1 className="text-4xl md:text-6xl font-bold text-charcoal max-w-4xl leading-tight mb-6">
-          Confused why your kid&apos;s math homework looks nothing like math?
-        </h1>
-        <p className="text-xl md:text-2xl text-charcoal max-w-2xl mb-6">
-          You&apos;re not wrong to be confused. But there&apos;s a reason it works — and it takes about 10 minutes to get it.
-        </p>
-        <p className="text-base text-charcoal/70 italic max-w-xl mb-8">
-          From a dad who rolled his eyes at Common Core for years — until his 7-year-old changed his mind at a science fair.
-        </p>
-        <div className="w-full bg-charcoal rounded-2xl py-8 px-4 max-w-[480px]">
-          <h2 className="text-white text-xl font-bold mb-1">Want to know when new grades drop?</h2>
-          <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
-          <EmailCapture />
-        </div>
-      </section>
+        {/* Section 1 — Grade Preview */}
+        <section
+          className="bg-tan px-6 text-center flex-shrink-0"
+          style={{ paddingTop: 'clamp(0.75rem, 2.7vh, 4rem)', paddingBottom: 'clamp(0.75rem, 2.7vh, 4rem)' }}
+        >
+          <h2
+            className="font-bold text-charcoal"
+            style={{ fontSize: 'clamp(1.5rem, 3.6vh, 3rem)', marginBottom: 'clamp(1rem, 2.3vh, 3rem)' }}
+          >
+            Common Core, Common Sense, Grade by Grade
+          </h2>
+          <GradeGrid />
+        </section>
+
+        {/* Section 2 — Hook + Email Capture */}
+        <section className="bg-sand flex flex-col items-center justify-center text-center px-6 flex-1"
+          style={{ paddingTop: 'clamp(0.5rem, 1.5vh, 1.75rem)', paddingBottom: 'clamp(0.5rem, 1.5vh, 1.75rem)' }}
+        >
+          <h1
+            className="font-bold text-charcoal max-w-4xl leading-tight"
+            style={{ fontSize: 'clamp(1.75rem, 4.2vh, 3.75rem)', marginBottom: 'clamp(0.5rem, 1.2vh, 1.5rem)' }}
+          >
+            Confused why your kid&apos;s math homework looks nothing like math?
+          </h1>
+          <p
+            className="text-charcoal max-w-2xl"
+            style={{ fontSize: 'clamp(1rem, 2vh, 1.5rem)', marginBottom: 'clamp(0.5rem, 1.2vh, 1.5rem)' }}
+          >
+            You&apos;re not wrong to be confused. But there&apos;s a reason it works — and it takes about 10 minutes to get it.
+          </p>
+          <p
+            className="text-charcoal/70 italic max-w-xl"
+            style={{ fontSize: 'clamp(0.875rem, 1.5vh, 1rem)', marginBottom: 'clamp(0.5rem, 1.5vh, 2rem)' }}
+          >
+            From a dad who rolled his eyes at Common Core for years — until his 7-year-old changed his mind at a science fair.
+          </p>
+          <div className="w-full bg-charcoal rounded-2xl py-6 px-4 max-w-[480px]">
+            <h2 className="text-white text-xl font-bold mb-1">Want to know when new grades drop?</h2>
+            <p className="text-white/70 text-sm mb-2">No spam. Just a note when something new is ready.</p>
+            <EmailCapture />
+          </div>
+        </section>
+
+      </div>
 
       {/* Section 3 — The Conversion Story */}
       <section className="bg-offwhite py-20 px-6">
